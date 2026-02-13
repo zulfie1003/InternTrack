@@ -47,15 +47,15 @@ cp .env.example .env
 # Open .env and update if needed (defaults work for local):
 # MONGODB_URI=mongodb://localhost:27017/interntrack
 # JWT_SECRET=your_secret_key_change_in_production
-# PORT=5000
+# PORT=5001
 
 # Start backend
-npm run dev
+npm start
 ```
 
-✅ Backend should be running at `http://localhost:5000`
+✅ Backend should be running at `http://localhost:5001`
 
-Test it: Open browser and go to `http://localhost:5000/health`
+Test it: Open browser and go to `http://localhost:5001/health`
 
 ---
 
@@ -74,7 +74,7 @@ npm install
 cp .env.example .env
 
 # Open .env and verify:
-# REACT_APP_API_URL=http://localhost:5000/api
+# REACT_APP_API_URL=http://localhost:5001/api
 
 # Start frontend
 npm start
@@ -114,9 +114,9 @@ brew services list
 # 3. Update MONGODB_URI in .env
 ```
 
-**Error: Port 5000 already in use**
+**Error: Port 5001 already in use**
 ```bash
-# Change PORT in backend/.env to different number (e.g., 5001)
+# Change PORT in backend/.env to different number (e.g., 5002)
 # Update frontend/.env REACT_APP_API_URL accordingly
 ```
 
@@ -215,7 +215,7 @@ A: Yes! Fork it and make it yours. See README for feature ideas.
 - [ ] MongoDB running (or Atlas setup)
 - [ ] Backend dependencies installed (`npm install`)
 - [ ] Backend .env file created
-- [ ] Backend running on port 5000
+- [ ] Backend running on port 5001
 - [ ] Frontend dependencies installed
 - [ ] Frontend .env file created
 - [ ] Frontend running on port 3000
